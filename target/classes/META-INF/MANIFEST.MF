@@ -4,7 +4,7 @@ Build-Jdk: 17.0.3
 Class-Path: lib/poi-ooxml-5.2.0.jar lib/poi-ooxml-lite-5.2.0.jar lib/xml
  beans-5.0.3.jar lib/commons-compress-1.21.jar lib/commons-io-2.11.0.jar
   lib/curvesapi-1.06.jar lib/log4j-api-2.17.1.jar lib/commons-collection
- s4-4.4.jar lib/poi-4.1.2.jar lib/commons-codec-1.13.jar lib/commons-mat
+ s4-4.4.jar lib/poi-5.2.0.jar lib/commons-codec-1.15.jar lib/commons-mat
  h3-3.6.1.jar lib/SparseBitSet-1.2.jar lib/javafx-swing-13.0.2-win.jar l
  ib/javafx-graphics-13.0.2.jar lib/javafx-graphics-13.0.2-win.jar lib/ja
  vafx-base-13.0.2.jar lib/javafx-base-13.0.2-win.jar

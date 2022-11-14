@@ -65,7 +65,7 @@ public class JanelaBasica extends JFrame {
 		
 		formatar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if (formatar(filepath, fileName, fileDestination)) {
+				if (App.formatar(filepath, fileName, fileDestination)) {
 					JOptionPane.showMessageDialog(null, "Texto Formatado");
 				}else {
 					JOptionPane.showMessageDialog(null,
@@ -117,36 +117,6 @@ public class JanelaBasica extends JFrame {
 		}
 	}
 	
-	private boolean formatar(String filePath, String fileName , String fileDestination) {
-		try (XWPFDocument textoFormatado = new XWPFDocument()){
-			FileInputStream file = new FileInputStream(filePath);
-			fileName = fileName.replace(".docx", "");
-			
-//			XWPFDocument docx = new XWPFDocument(file);
-			
-//			List<XWPFParagraph> listaParagrafos = docx.getParagraphs();
-//			
-//			String teste = null;
-//			for(XWPFParagraph paragrafo : listaParagrafos) {
-//				System.out.println(paragrafo.getText());
-//				teste += paragrafo.getText();
-//			}
-			
-//			XWPFParagraph Teste = textoFormatado.createParagraph();
-//			XWPFRun testeRun = Teste.createRun();
-//			testeRun.setText(teste);
-			
-			textoFormatado.write(new FileOutputStream(new File(fileDestination+"\\"+fileName+"-formatado.docx")));
-			
-			return true;
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-			return false;
-		} catch (IOException e) {
-			e.printStackTrace();
-			return false;
-		}
-	}
 	
 }
 
