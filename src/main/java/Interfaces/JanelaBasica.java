@@ -28,7 +28,7 @@ public class JanelaBasica extends JFrame {
 	
 	Container contentPane = getContentPane();
 	String filepath;
-	String fileDestination;
+	String fileDestination = FileSystemView.getFileSystemView().getHomeDirectory().getAbsolutePath();
 	String fileName;
 	JLabel nomeArquivo = new JLabel();
 	JButton formatar = new JButton("Formatar");
